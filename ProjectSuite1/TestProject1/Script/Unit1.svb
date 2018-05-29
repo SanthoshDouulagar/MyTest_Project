@@ -1,0 +1,9 @@
+﻿Sub Test1
+  Dim orders
+  Dim mainForm
+  Set orders = Aliases.Orders
+  Set mainForm = orders.MainForm
+  mainForm.Maximize
+  Call mainForm.MainMenu.Click("Orders|New order...")
+  orders.OrderForm.ButtonOK.ClickButton
+End Sub
